@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--codificación de caracteres-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--titulo de la wev-->
+<title>Curso Pwa</title>
+<meta name="viewport" content="width= device-width, initial-scale=1.0, user-scalable=no"/>
+<!--favicon de la pagina web-->
+<link rel="shortcut icon" type="img/png" href="img/favicon.png">
+
+<!--ETIQUETAS META PRA LA PWA-->
+<!--configuración a nivel de html para que el navegador reconozca qeu esto es una PWA-->
+<!--COLOR DE LA APLICACION-->
+<meta name="theme-color" content="#FB314E" />
+<!--OPTIMIZACIÓN PARA MOVIL-->
+<!--Lo que le estoy inidicando aquí es que la aplicacion esta optimizada a nivel de anchura y a nivel de responsive,con cualquier pantalla--> <meta name="MobileOptimized" content="width" />
+<!--Esta metaetiqueta está indicandole otros parámetros para que automaticamente el navegador de nuestro dispositivo movil sepa que esto es una PWA y funcione--> <meta name="HandheldFriendly" content="true" />
+
+<!--META ETIQUETAS PARA DISPOSITIVOS DE APPLE-->
+<!--Estas son las metas que tengo que configurar para que mi PWA funcione en iphone-->
+<!--esto seria para activar la PWA-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--Esto es para configurar la barra de estado de la aplicación -->
+<meta name="apple-moble-web-app-status-bar-style" content="black-translucent" />
+<!--Ahora vamos a configurar el icono para la PWA en un dispositivo de apple, esto es para cargar el favicon en los dispositivos de apple-->
+<link rel="apple-touch-icon" href="img/favicon.png" />
+<!-- Ahora vamos a configurar el espacio screen-->
+<link rel="apple-touch-startup-image" href="img/favicon.png" />
+
+<!--Configuración general de la PWA(MANIFIESTO)-->
+<link rel="manifest" href="manifest.json">
+
+
+<!--styles-->
+<link rel="stylesheet" href="css/escritorio.css" />
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--scripts-->
+<script src="main.js"></script>
+</head>
+
+<body>
+<header>
+	<div class="container">
+<div class="logo">
+	<h1>Victor Robles Web</h1>
+</div>
+<nav>
+ <ul class="menu" id="menu">
+   	<li><a href="#cont">Inicio</a></li>
+   	<li><a href="#servicios">Servicios</a></li>
+   	<li><a href="#videos">Videos</a></li>
+   	<li><a href="#contacto">Contácto</a></li>
+   </ul>
+</nav>
+</div>
+</header>
+<div class="clearfix"></div>
+<div class="slider">
+     <div class="container" id="cont">
+     	<h2>Desarrollador web y profesor</h2>
+     </div>
+	</div>
+
+	<div class="services" id="servicios">
+		<div class="container">
+		<h2 class="subheader">Servicios</h2>
+
+		<div class="service">
+			<img src="img/1.png"/>
+			<h3>Desarrollo web</h3>
+			<p>Ofrezco servicios de desarrollo web moderno con las mejores tecnologías y plataformas web.</p>
+		</div>
+
+		<div class="service">
+			<img src="img/2.png"/>
+			<h3>Diseño web</h3>
+			<p>Diseño de sitios y aplicaciones web moderno, limpio y atractivo para tus clientes.</p>
+		</div>
+
+		<div class="service">
+			<img src="img/3.png"/>
+			<h3>Mentoria</h3>
+			<p>Puedo ser tu mentor o profesor para enseñarte desarrollo y programación web moderna.</p>
+		</div>
+</div>
+	</div><!--end servicios-->
+<div class="clearfix"></div>
+
+	<div class="videos">
+       <div class="container">
+       	 <h2 class="subheader" id="videos">Videos</h2>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/65xMOuuDBwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>10 Frameworks para Desarrollo Web importantes en el 2020</p>
+       </div>
+
+       <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pyKJoAfzGIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>En este vídeo te hablaré del presente y el futuro de JavaScript en el 2020, las tendencias de este lenguaje de programación y que aprender dentro del ecosistema de JavaScript y mucho más.</p>
+       </div>
+
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nl2rusv9i8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>En este vídeo vamos a hablar acerca de los pasos que hay que seguir para convertirte en un desarrollar web de la forma más rápida, fácil y desde cero.</p>
+       </div>
+   </div>
+	</div>
+	<!--fin videos-->
+
+<div class="clearfix"></div>
+<footer id="footer">
+	<div class="container">
+		 <h2 class="subheader" id="contacto">Contácto</h2>
+		 <p>Enviame un mensaje en cualquiera de estas redes sociales</p>
+
+		 <ul class="redes">
+		 	<li><a href="#"><img src="img/twitter.png"></a></li>
+
+		 	<li><a href="#"><img src="img/facebook.png"></a></li>
+
+		 	<li><a href="#"><img src="img/instagram.png"></a></li>
+		 </ul>
+
+		</div>
+		<div class="clearfix"></div>
+</footer>
+
+</body>
+
+</html>

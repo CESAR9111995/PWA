@@ -1,0 +1,444 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*ESTILOS GENERALES*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	font-family: 'Open sans' , Verdana;
+}
+
+body{
+	background-color: white;
+} 
+
+.clearfix{
+	clear: both;
+	float: none;
+} .container{
+	width: 85%;
+	margin: 0px auto;/*sirve para centrar un bloque*/
+}
+
+
+/*ESTILOS DE LA CABECERA*/
+
+header{
+	background-color: white;
+	height: 100px;
+	width: 100%;
+	line-height: 85px;
+	/*border-bottom: 1px solid black;*/
+ } .logo{
+ 	width: 65%;
+ 	float: left;
+ } .logo h1{
+ 	font-weight: bold;
+ 	font-size: 25px;
+ 	color: #FB314E;
+ } nav{
+ 	width: 380px;
+ 	float: left;
+ } nav .menu li{
+ 	float: left;
+ 	list-style: none;
+ 	margin-left: 20px;
+ } nav .menu li a{
+ 	text-decoration: none;
+ 	color: #333;
+ } nav .menu li a:hover{
+ 	color: #FB314E;
+ }
+
+/*SLIDER*/
+
+ .slider{
+ 	width: 100%;
+ 	height: 300px;
+ 	background-color: #FB314E;
+ } .slider h2{
+ 	color: white;
+ 	font-size: 40px;
+ 	text-align: center;
+ 	line-height: 290px;
+ 	text-shadow: 0px 0px 6px black;
+ }
+
+/*MAQUETANDO LA PARTE DE LOS SERVICIOS*/
+
+.subheader{
+	font-size: 34px;
+	color: #333;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom:1px solid rgba(251, 49, 78, 0.4);
+} .service, .video{
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}  /*para que al flotar los elementos lo de abajo no se modifique o se suba le vamos a poner un clear fix
+para eso es necesario crear un div conla clase clearfix en el html abajo del ultimo div flotado 
+*/
+
+.service img{
+	height: 48px;
+	margin-bottom: 20px;
+} .service h3{
+	margin-bottom: 10px; 
+} .service p, .video p{
+	display: block;
+	margin: 0px auto;
+	width: 80%;
+	color: #333;
+	
+}
+
+/*VIDEOS*/
+
+.video iframe{
+	width: 80%;
+	height: 170px;
+}
+
+/*FOOTER*/
+
+footer{
+	width: 100%;
+	height: 300px;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+	background-color: #333;
+} footer .subheader{
+	color: white;
+} 
+
+
+.redes{
+	width: 220px;
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 0px auto;
+}  .redes li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+} .redes{
+	width: 220px;
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 0px auto;
+}  .redes li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+} .redes li:hover{
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+
+@media (max-width: 1225px){
+ .container{
+ 	width: 95%;
+ }
+
+} @media (max-width: 1085px){
+
+header{
+	height: 70px;
+	line-height: 65px;
+}
+	.logo{
+		display: block;
+ 	width: 280px;
+ 	float: none;
+ 	margin: 0px auto;
+ 	text-align: center;
+
+ } .logo h1{
+ 	display: block;
+ 	font-weight: bold;
+ 	font-size: 20px;
+ 	color: #FB314E;
+ 	margin:0px auto;
+ }
+
+nav{
+ 	width: 380px;
+ 	float: none;
+ 	margin: 0px auto;
+ } 
+}
+
+@media (max-width: 999px){
+
+	nav{
+ 	width: 380px;
+ 	float: none;
+ 	margin: 0px auto;
+ } .logo{
+ 	width: 280px;
+ 	float: none;
+ 	margin: 0px auto;
+ } 
+
+ /**SLIDER**/
+ .slider{
+ 	width: 100%;
+ 	height: 150px;
+ 	background-color: #FB314E;
+ 	overflow: hidden;
+ } .slider h2{
+ 	color: white;
+ 	font-size: 25px;
+ 	line-height: 0px;
+ 	margin-top: 70px;
+ }
+
+/****SERVICIOS**/
+.subheader{
+	font-size: 25px;
+	color: #333;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom:1px solid rgba(251, 49, 78, 0.4);
+} .service, .video{
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}  /*para que al flotar los elementos lo de abajo no se modifique o se suba le vamos a poner un clear fix
+para eso es necesario crear un div conla clase clearfix en el html abajo del ultimo div flotado 
+*/
+
+.service img{
+	height: 48px;
+	margin-bottom: 20px;
+} .service h3{
+	margin-bottom: 10px; 
+} .service p, .video p{
+	display: block;
+	margin: 0px auto;
+	width: 80%;
+	color: #333;
+	
+}
+
+/*VIDEOS*/
+
+.video iframe{
+	width: 80%;
+	height: 170px;
+}
+
+/*FOOTER*/
+
+footer{
+	width: 100%;
+	height: 300px;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+	background-color: #333;
+} footer .subheader{
+	color: white;
+} 
+
+
+.redes{
+	width: 220px;
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 0px auto;
+}  .redes li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20PX;
+	transition: all 300ms;
+} .redes{
+	width: 220px;
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 0px auto;
+}  .redes li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+} .redes li:hover{
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+
+
+
+} @media (max-width: 430px){
+  .slider h2{
+ 	color: white;
+ 	font-size: 20px;
+ 	line-height: 0px;
+ 	margin-top: 70px;
+ }
+
+
+/*servicios*/
+ .subheader{
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom:1px solid rgba(251, 49, 78, 0.4);
+} .container p{
+ font-size: 15px;
+}
+
+.service, .video{
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}  /*para que al flotar los elementos lo de abajo no se modifique o se suba le vamos a poner un clear fix
+para eso es necesario crear un div conla clase clearfix en el html abajo del ultimo div flotado 
+*/
+
+.service img{
+	height: 48px;
+	margin-bottom: 20px;
+} .service h3{
+	margin-bottom: 10px; 
+} .service p, .video p{
+	display: block;
+	margin: 0px auto;
+	width: 80%;
+	font-size: 10px;
+	color: #333;
+	
+}
+
+/*VIDEOS*/
+
+.video iframe{
+	width: 80%;
+	height: 70px;
+}
+
+/*FOOTER*/
+
+footer{
+	width: 100%;
+	height: 300px;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+	background-color: #333;
+} footer .subheader{
+	color: white;
+} 
+
+
+.redes{
+	width: 220px;
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 0px auto;
+}  .redes li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+} .redes{
+	width: 220px;
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 0px auto;
+}  .redes li{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+} .redes li:hover{
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+}
+
+
+@media (max-width: 377px){
+
+ nav{
+ 	width: 90%;
+ 	float: none;
+ 	margin-left: 10%;
+ } nav .menu li{
+ 	float: left;
+ 	list-style: none;
+ 	margin-left: 10px;
+ } nav .menu li a{
+ 	text-decoration: none;
+ 	font-size: 15px;
+ 	color: #333;
+ } nav .menu li a:hover{
+ 	color: #FB314E;
+ }
+
+
+}
+
+@media (max-width: 345px){
+
+header{
+	height: auto;
+	line-height: 65px;
+}
+
+nav .menu li{
+ 	float: none;
+ 	list-style: none;
+ 	margin-left: 10px;
+ }
+
+ /*Slider*/
+  .slider h2{
+ 	color: white;
+ 	font-size: 15px;
+ 	line-height: 0px;
+ 	margin-top: 70px;
+ }
+
+}
